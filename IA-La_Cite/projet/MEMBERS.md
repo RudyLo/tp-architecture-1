@@ -1,0 +1,6 @@
+KOUAMO KAMENI Hervé Kisito - 4A CFA
+JOU Ahmed - 4A CFA
+CAUGANT Guillaume - 4A CFA
+CAMOZZI Valentin - 4A CFA
+TCHIASSO Nono Armel - 4A CFA
+LOMBARD Rudy - 4A CFA
