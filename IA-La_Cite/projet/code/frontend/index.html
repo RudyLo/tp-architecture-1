@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-    <link href="./assets/style/style.css" rel="stylesheet" />
+    <link href="./assets/styles/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -17,46 +17,89 @@
     <div id="app">
         <!--BARRE DE NAVIGATION-->
         <nav>
-          <div class="nav-container">
-            <ul>
-              <router-link to="/sign-in">
-              <li><a>Se connecter</a></li>
-              </router-link>
-              <router-link to="/sign-up">
-                <li><a>S' inscrire</a></li>
-                </router-link>
-              <router-link to="/vol">
-              <li><a>Trouvez un vol</a></li>
-              </router-link>
-              <router-link to="/">
-              <li style="float: left"><a class="active">Home</a></li>
-              </router-link>
-            </ul>
-          </div>
+            <div class="nav-container">
+                <ul>
+                    <router-link to="/sign-in">
+                        <li><a>Se connecter</a></li>
+                    </router-link>
+                    <router-link to="/sign-up">
+                        <li><a>S' inscrire</a></li>
+                    </router-link>
+                    <router-link to="/vol">
+                        <li><a>Trouvez un vol</a></li>
+                    </router-link>
+                    <router-link to="/">
+                        <li style="float: left"><a class="active">Home</a></li>
+                    </router-link>
+                </ul>
+            </div>
         </nav>
         <router-view></router-view>
 
-        <!--HOME PAGE-->
+
+
+        <!--PAGE HOME-->
         <script type="text/x-template" id="home">
             <div class="">
                 <h1>Page home</h1>
             </div>
         </script>
 
-        <!--FORMULAIRE DE CONNEXION-->
+
+
+        <!--PAGE DE CONNEXION-->
         <script type="text/x-template" id="signin">
-            <div class="">
+            <div class="connexion">
                 <h1>Page de connexion</h1>
+
+                    <!--formulaire de connexion-->
+                <form action="" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username-login" placeholder="userName">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password-login" placeholder="password">
+                    </div>
+                    <button v-on:click="login" value="Login" class="btn solid">Envoyer</button>
+                </form>
             </div>
         </script>
 
-        <!--FORMULAIRE D' INSCRIPTION-->
+
+
+        <!--PAGE D' INSCRIPTION-->
         <script type="text/x-template" id="signup">
             <div class="">
                 <h1>Page d'inscription</h1>
+
+                <form action="" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                      <i class="fas fa-user"></i>
+                      <input type="text" id="username" placeholder="userName">
+                    </div>
+                    <div class="input-field">
+                      <i class="fas fa-at"></i>
+                      <input type="mail" id="mail" placeholder="mail">
+                    </div>
+                    <div class="input-field">
+                      <i class="fas fa-user-tag"></i>
+                      <input type="text" id="pseudo" placeholder="Pseudo">
+                    </div>
+                    <div class="input-field">
+                      <i class="fas fa-lock"></i>
+                      <input type="password" id="password" placeholder="password">
+                    </div>
+                    <button v-on:click="postUser" value="Login" class="btn solid">Envoyer</button>
+                </form>
             </div>
         </script>
 
+
+        
         <!--PAGE POUR TROUVER ET RÉSERVER UN VOL-->
         <script type="text/x-template" id="vol">
             <div class="">
