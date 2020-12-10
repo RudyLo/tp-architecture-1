@@ -14,13 +14,60 @@
 
 <body>
 
+    <div id="app">
+        <!--BARRE DE NAVIGATION-->
+        <nav>
+          <div class="nav-container">
+            <ul>
+              <router-link to="/sign-in">
+              <li><a>Se connecter</a></li>
+              </router-link>
+              <router-link to="/sign-up">
+                <li><a>S' inscrire</a></li>
+                </router-link>
+              <router-link to="/vol">
+              <li><a>Trouvez un vol</a></li>
+              </router-link>
+              <router-link to="/">
+              <li style="float: left"><a class="active">Home</a></li>
+              </router-link>
+            </ul>
+          </div>
+        </nav>
+        <router-view></router-view>
+
+        <!--HOME PAGE-->
+        <script type="text/x-template" id="home">
+            <div class="">
+                <h1>Page home</h1>
+            </div>
+        </script>
+
+        <!--FORMULAIRE DE CONNEXION-->
+        <script type="text/x-template" id="signin">
+            <div class="">
+                <h1>Page de connexion</h1>
+            </div>
+        </script>
+
+        <!--FORMULAIRE D' INSCRIPTION-->
+        <script type="text/x-template" id="signup">
+            <div class="">
+                <h1>Page d'inscription</h1>
+            </div>
+        </script>
+
+        <!--PAGE POUR TROUVER ET RÉSERVER UN VOL-->
+        <script type="text/x-template" id="vol">
+            <div class="">
+                <h1>Trouvez et réserver votre vol</h1>
+            </div>
+        </script>
 
 
 
 
-
-
-
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
