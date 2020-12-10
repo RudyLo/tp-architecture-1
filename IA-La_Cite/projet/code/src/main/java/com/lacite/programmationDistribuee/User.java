@@ -1,46 +1,72 @@
 package com.lacite.programmationDistribuee;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import java.util.ArrayList;
-import java.util.List;
-@JsonIgnoreProperties(ignoreUnknown = true)
+
+import javax.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+
+
+@Table(name = "user")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+
 public class User {
-    private int id;
+
+
+    @Id
+    @GeneratedValue
+    private long id;
+    private String username;
+    private String password;
+    private String name;
     private String email;
-    private List<Vol> reservation;
 
-    public User(int id, String email) {
-        this.id = id;
-        this.email = email;
-        this.reservation = new ArrayList<Vol>();
-    }
-    public void ajouterVol(Vol vol)
-    {
-        this.getReservation().add(vol);
-    }
-
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setId(long id) {
         this.id = id;
     }
 
-    public String getEmail() {
-        return email;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public void setEmail(String email) {
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public  void setEmail(String email)
+    {
         this.email = email;
     }
-
-    public List<Vol> getReservation() {
-        return reservation;
+    public String getEmail()
+    {
+        return this.email;
     }
 
-    public void setReservation(List<Vol> reservation) {
-        this.reservation = reservation;
+    public void hiddenPassword()
+    {
+        this.password = "************";
     }
-
-
 }
