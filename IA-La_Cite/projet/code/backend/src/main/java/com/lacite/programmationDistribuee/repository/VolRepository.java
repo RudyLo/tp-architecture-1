@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface VolRepository extends JpaRepository<Vol, Integer> {
     List<Vol> findAllByCodeDepartEquals(String airport);
+    Vol findByIdEquals(long id);
 }
