@@ -42,6 +42,15 @@
         <script type="text/x-template" id="home">
             <div class="">
                 <h1>Page home</h1>
+                
+                <div v-if="cookie == ''">
+                    <h1>Veuillez vous connecter svp</h1>
+                </div>
+                <div v-else>
+                    <h1>Bonjour {{this.pseudo}}</h1>
+                    <h2>Votre nom d'utilisateur est : {{this.username}}</h2>
+                    <h2>Votre adresse mail est : {{this.mail}}</h2>
+                </div>
             </div>
         </script>
 
