@@ -39,7 +39,7 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().authorizeRequests().antMatchers("/user/authentification","/user/registration","/flight/all").permitAll().anyRequest().authenticated()
+        http.csrf().disable().authorizeRequests().antMatchers("/user/authentification","/user/registration","/flight/all","/reservation/add","/reservation/all").permitAll().anyRequest().authenticated()
                 .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         http.addFilterBefore(tokenFilter, UsernamePasswordAuthenticationFilter.class);
     }
