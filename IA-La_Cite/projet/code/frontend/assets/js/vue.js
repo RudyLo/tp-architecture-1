@@ -40,6 +40,24 @@ const Signup = {
         }
     },
     methods: {
+        Inscription: async() => {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var pseudo = document.getElementById("pseudo").value;
+            var mail = document.getElementById("mail").value;
+            console.log("username : " + username + "\npassword : " + password + "\npseudo : " + pseudo + '\nmail : ' + mail);
+      
+            const rawResponse = await fetch('http://localhost:8080/user/registration', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+            body: JSON.stringify({username: username, password: password, name: pseudo, email: mail})
+            });
+            const content = await rawResponse.json();
+            console.log(content);
+            },
+
     },
     mounted() {
     
