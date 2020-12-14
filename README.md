@@ -25,7 +25,7 @@ Notre deisgn se trouve dans le fichier ```projet/E1-DESIGN.md```
 
 ## Création d'un utilisateur
 
-![alt text](Users\Armel\Desktop\ESIEA\4A-S1\Programmatio distribuée\creation_user.png) 
+![alt text](http://Users\Armel\Desktop\ESIEA\4A-S1\Programmatio distribuée\creation_user.png) 
 
 ## Login
 
