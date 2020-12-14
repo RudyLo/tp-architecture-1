@@ -1,4 +1,4 @@
-# TP Architecture Distribué
+# Présentation du projet
 
 Ce projet est une solution, ultra simplifiée de reservation de billet d'avion.
 Nous gérons 3 aéroports:
@@ -13,6 +13,13 @@ Un billet d'avion est constitué:
 - D'un prix (en Euros)
 
 __CDG-JFK 400__ represente donc un billet d'avion au départ de Paris et à destination de New York à 400 euros.
+
+# Démarrage du projet
+
+ATTENTION !!
+Il faut modifier le fichier application.properties en mettant les informations suivantes :
+- L'URL : vérifier IP, port et nom de la base de données
+- Username/Password : vérfier que le username et le password corresponde bien aux vôtres
 
 ## Design
 
