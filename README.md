@@ -29,6 +29,8 @@ Notre deisgn se trouve dans le fichier ```projet/E1-DESIGN.md```
 
 ## Login
 
+![github-small]()
+
 ## Liste de vols disponibles
 
 ## Réservation d'un vol
