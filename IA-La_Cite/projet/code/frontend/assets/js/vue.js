@@ -26,6 +26,7 @@ const Home = {
             pseudo: "",
             email: "",
             cookie: "",
+            vols: "",
         }
     },
     methods: {
@@ -49,12 +50,27 @@ const Home = {
                 })})
             }
         },
+
+        getVols(){
+            fetch("http://localhost:8080/reservation/all", {
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer ' + store.token,
+                }})
+            .then( response => {
+                response.json().then(data => {
+                console.log(data);
+                this.vols = data;
+                console.log(this.vols);
+                })})
+        }
     },
     mounted() {
         store.commit('getCookie');
         console.log("home | fin mounted | valeur token store | " + store.token);
         this.cookie = store.token;
         this.getUser();
+        this.getVols();
         
     }
 };
