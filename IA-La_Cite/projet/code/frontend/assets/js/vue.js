@@ -55,6 +55,7 @@ const Home = {
         console.log("home | fin mounted | valeur token store | " + store.token);
         this.cookie = store.token;
         this.getUser();
+        
     }
 };
 
@@ -140,7 +141,7 @@ const Vol = {
     methods: {
     },
     mounted() {
-    
+        
     }
 };
 

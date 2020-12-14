@@ -20,10 +20,10 @@
             <div class="nav-container">
                 <ul>
                     <router-link to="/sign-in">
-                        <li><a>Se connecter</a></li>
+                        <li class="connection" id="connexion"><a>Se connecter</a></li>
                     </router-link>
                     <router-link to="/sign-up">
-                        <li><a>S' inscrire</a></li>
+                        <li class="inscription" id="inscription"><a>S' inscrire</a></li>
                     </router-link>
                     <router-link to="/vol">
                         <li><a>Trouvez un vol</a></li>
@@ -36,7 +36,7 @@
         </nav>
         <router-view></router-view>
 
-
+        
 
         <!--PAGE HOME-->
         <script type="text/x-template" id="home">
@@ -50,6 +50,8 @@
                     <h1>Bonjour {{this.pseudo}}</h1>
                     <h2>Votre nom d'utilisateur est : {{this.username}}</h2>
                     <h2>Votre adresse mail est : {{this.mail}}</h2>
+                    <h1>Vos vols réservés :</h1>
+                    
                 </div>
             </div>
         </script>
@@ -127,6 +129,7 @@
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="https://unpkg.com/vue-cookies@1.5.12/vue-cookies.js"></script>
     <script src="./assets/js/vue.js" type="text/javascript"></script>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
 </body>
 
 </html>
