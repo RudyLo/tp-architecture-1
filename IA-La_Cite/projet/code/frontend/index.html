@@ -51,7 +51,11 @@
                     <h2>Votre nom d'utilisateur est : {{this.username}}</h2>
                     <h2>Votre adresse mail est : {{this.mail}}</h2>
                     <h1>Vos vols réservés :</h1>
-                    <h2>{{this.vols}}</h2>
+                    
+                    <p v-for="item in tab">
+                        {{item}}
+                    </p>
+      
                     
                 </div>
             </div>

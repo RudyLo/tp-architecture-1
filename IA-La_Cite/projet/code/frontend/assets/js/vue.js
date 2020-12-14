@@ -26,7 +26,15 @@ const Home = {
             pseudo: "",
             email: "",
             cookie: "",
-            vols: "",
+            tab:[],
+            vol: {
+                id: "",
+                user: "",
+                codeDepart: "",
+                codeArrivee: "",
+                dateVol: "",
+                prixVol: "",
+            },
         }
     },
     methods: {
@@ -43,7 +51,7 @@ const Home = {
             .then( response => {
                 response.json().then(data => {
                 console.log(data);
-                this.id = data.id;
+                //this.id = data.id;
                 this.username = data.username;
                 this.pseudo = data.name;
                 this.mail = data.email;
@@ -61,7 +69,20 @@ const Home = {
                 response.json().then(data => {
                 console.log(data);
                 this.vols = data;
+                console.log(data);
+                data.forEach(element => {
+                    var obj = new Object();
+                    obj.id = element.id;
+                    obj.user = element.user;
+                    obj.date = element.dateVol;
+                    obj.depart = element.codeDepart;
+                    obj.arrive = element.codeArrivee;
+                    obj.prix = element.prixVol;
+                    console.log(obj);
+                    this.tab.push(obj);
+                });
                 console.log(this.vols);
+                console.log(this.tab);
                 })})
         }
     },
@@ -81,31 +102,31 @@ const Signin = {
     name: 'Signin',
     data: ()=> {
         return {
-            Connexion: async() => {
-                var username = document.getElementById("username-login").value;
-                var password = document.getElementById("password-login").value;
-                console.log("username : " + username + "\npassword : " + password);
-          
-                const rawResponse = await fetch('http://localhost:8080/user/authentification', {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json'
-                  },
-                body: JSON.stringify({username: username, password: password})
-                });
-                const content = await rawResponse.json();
-                console.log(content.token);
-                    if (content.token == "" || content.token == null || content.token == undefined ){
-                        console.log("identifiants incorrectes")
-                    }else{
-                        $cookies.set('token', JSON.stringify(content.token));
-                        router.push({ path: '/'});
-                    }
-                },
+            
         }
     },
     methods: {
-        
+        Connexion: async() => {
+            var username = document.getElementById("username-login").value;
+            var password = document.getElementById("password-login").value;
+            console.log("username : " + username + "\npassword : " + password);
+      
+            const rawResponse = await fetch('http://localhost:8080/user/authentification', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+            body: JSON.stringify({username: username, password: password})
+            });
+            const content = await rawResponse.json();
+            console.log(content.token);
+                if (content.token == "" || content.token == null || content.token == undefined ){
+                    console.log("identifiants incorrectes")
+                }else{
+                    $cookies.set('token', JSON.stringify(content.token));
+                    router.push({ path: '/'});
+                }
+            },
     },
     mounted() {
     
