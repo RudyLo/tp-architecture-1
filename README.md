@@ -33,4 +33,6 @@ Notre deisgn se trouve dans le fichier ```projet/E1-DESIGN.md```
 
 ## Liste de vols disponibles
 
+![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/volavailable.PNG)
+
 ## Réservation d'un vol
