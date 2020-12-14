@@ -25,25 +25,25 @@ Notre deisgn se trouve dans le fichier ```projet/E1-DESIGN.md```
 
 ## Création d'un utilisateur
 
-![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/creation_user.PNG)
+![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/IA-La_Cite/creation_user.PNG)
 
 ## Login
 
-![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/login_user.PNG)
+![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/IA-La_Cite/login_user.PNG)
 
 ## Liste de vols disponibles
 
-![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/volavailable.PNG)
+![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/IA-La_Cite/volavailable.PNG)
 
 ## Réservation d'un vol
 
 L'ajout a été accepté :
 
-![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/addReservationAccept.PNG)
+![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/IA-La_Cite/addReservationAccept.PNG)
 
 Réservation effectuée avec les détails de celle-ci :
 
-![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/reservation_details.PNG)
+![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/IA-La_Cite/reservation_details.PNG)
 
 ## Démonstration en vidéo
 
