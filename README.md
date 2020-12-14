@@ -39,4 +39,4 @@ Notre deisgn se trouve dans le fichier ```projet/E1-DESIGN.md```
 
 L'ajout a été accepté :
 
-![github-small]()
+![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/addReservationAccept.PNG)
