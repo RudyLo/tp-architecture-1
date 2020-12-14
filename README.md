@@ -25,7 +25,7 @@ Notre deisgn se trouve dans le fichier ```projet/E1-DESIGN.md```
 
 ## Création d'un utilisateur
 
-![github-small](https://github.com/RudyLo/tp-architecture-1/blob/main/creation_user.PNG)
+![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/creation_user.PNG)
 
 ## Login
 
