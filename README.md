@@ -44,3 +44,7 @@ L'ajout a été accepté :
 Réservation effectuée avec les détails de celle-ci :
 
 ![github-small](https://github.com/RudyLo/tp-architecture-1/blob/IA-La_Cite/reservation_details.PNG)
+
+## Démonstration en vidéo
+
+Lien vidéo : https://www.youtube.com/watch?v=YdRqH4su9Pw
